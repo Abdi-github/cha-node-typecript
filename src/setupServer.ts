@@ -56,9 +56,7 @@ export class chaServer {
     app.use(urlencoded({ extended: true, limit: '50mb' }));
   }
 
-  private routeMiddleware(app: Application): void {
-    // console.log(app);
-  }
+  private routeMiddleware(app: Application): void {}
 
   private globalErrorHandler(app: Application): void {
     app.all('*', (req: Request, res: Response) => {
